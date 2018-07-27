@@ -1,7 +1,16 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+$git init > Two files are listed as untracked files.
+
+To do this we can store all versions we need and then do the version control. 
+
+
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+
+
+Staging area is a kinda temporary area that we can choose which files should be updated. 
+On the other hand, working directory is a permanent directory.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
