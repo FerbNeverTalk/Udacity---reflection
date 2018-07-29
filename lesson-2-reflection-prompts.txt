@@ -1,27 +1,48 @@
-What happens when you initialize a repository? Why do you need to do it?
+1. What happens when you initialize a repository? Why do you need to do it?
 
 $git init > Two files are listed as untracked files.
 
 To do this we can store all versions we need and then do the version control. 
 
 
-How is the staging area different from the working directory and the repository?
+2. How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
 
 Staging area is a kinda temporary area that we can choose which files should be updated. 
 On the other hand, working directory is a permanent directory.
 
-How can you use the staging area to make sure you have one commit per logical
+3. How can you use the staging area to make sure you have one commit per logical
 change?
 
-What are some situations when branches would be helpful in keeping your history
+We add one changed file to staging area and commit it.
+
+
+4.What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-How do the diagrams help you visualize the branch structure?
+When we would like to test something interesting but might be harmful or risky. 
+To correct a bug, or to add up a new feature.
 
-What is the result of merging two branches together? Why do we represent it in
+The master branch is the quality production that always work while other branch is developing which could be poor at quality but fresh.
+
+
+5. How do the diagrams help you visualize the branch structure?
+
+The diagrams help as know which commits are outside of any branch and thus unreachable. 
+Also, it visulize what commits can be tracked in one specific branch. 
+
+6. What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
+The two branches merges as one branch. All the commits in the two branches would be kept in the log chronically. 
+The merged branch label can be forfeit since it has been useless while the commits would still be kept. 
+
+
+7. What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Pros: it is convenient and time saving to merge two commits with different features.
+Cons: When it meets conflict, it will be a bit hard to determine which one should be kept. 
+
+
